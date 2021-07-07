@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction_document</title>
+    <style>
+        #emo-back{
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 20%;
+          }
+          #emo-back:hover{
+              background-color: red;
+          }
+    </style>
+    <script type="text/javascript" src="main.py"></script>
+
+    <link rel="stylesheet" href="../static/style_new.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Get your predicted value here!</h1>
+    <hr noshade="2">
+    <h2>The predicted emotion is calculated as: {{predict}}</h2>
+    <h3>Click in the emoji to get into your wallpaper store</h3>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <a href="{{url_for('HAPPY') }}"><img src="../static/happy_emoji.jpg"></a>
+                <a href="{{url_for('NEUTRAL') }}"><img src="../static/neutral_emoji.jpg"></a>
+                <a href="{{url_for('SAD') }}"><img src="../static/sad_emoji.jpg"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <a href="{{url_for('FEAR') }}"><img src="../static/fear_emoji.jpg"></a>
+                <a href="{{url_for('SURPRISE') }}"><img src="../static/surprise_emoji.jpg"></a>
+                <a href="{{url_for('DISGUST') }}"><img src="../static/disgust_emoji.jpg"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <a href="{{url_for('ANGRY') }}"><img src="../static/angry_emoji.jpg"></a>
+            </div>
+        </div>
+    </div>
+    <button id='emo-back' class="btn btn-success btn-lg">LOG OUT</button>
+    <script type="text/javascript">
+        document.getElementById("emo-back").onclick = function () {
+            location.href =  "{{url_for('index') }}"
+        };
+    </script>
+</body>
+</html>

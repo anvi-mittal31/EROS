@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Wallpapers</title>
+    <style>
+        #emo-back{
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 20%;
+          }
+          #emo-back:hover{
+              background-color: red;
+          }
+    </style>
+    <link rel="stylesheet" href="../static/Styles_Wallpapers.css">
+    <script src="https://kit.fontawesome.com/66eb956f0d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Find your moody wallpapers here!<i class="fas fa-laugh-wink"></i></h1>
+    <hr noshade="2">
+    <h2>We are here to your rescue.</h2>
+    <h2>Next we have in line, Sad Mood Wallpapers: </h2>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <a href="../static/sad1.jpg" download="sad1"></a>
+                    <img src="../static/sad1.jpg">
+                </a>
+                <a href="../static/sad2.jpg" download="sad2"></a>
+                    <img src="../static/sad2.jpg">
+                </a>
+                <a href="../static/sad3.jpg" download="sad3"></a>
+                    <img src="../static/sad3.jpg">
+                </a>
+            </div>
+        </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <a href="../static/sad4.jpg" download="sad4"></a>
+                            <img src="../static/sad4.jpg">
+                        </a>
+                        <a href="../static/sad5.jpg" download="sad5"></a>
+                            <img src="../static/sad5.jpg">
+                        </a>
+                        <a href="../static/sad6.jpg" download="sad6"></a>
+                            <img src="../static/sad6.jpg">
+                        </a>
+                    </div>
+                </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <a href="../static/sad7.jpg" download="sad7"></a>
+                    <img src="../static/sad7.jpg">
+                </a>
+                <a href="../static/sad8.jpg" download="sad8"></a>
+                    <img src="../static/sad8.jpg">
+                </a>
+                <a href="../static/sad9.jpg" download="sad9"></a>
+                    <img src="../static/sad9.jpg">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <a href="../static/sad10.jpg" download="sad10"></a>
+                    <img src="../static/sad10.jpg">
+                </a>
+                <a href="../static/sad11.jpg" download="sad11"></a>
+                    <img src="../static/sad11.jpg">
+                </a>
+                <a href="../static/sad12.jpg" download="sad12"></a>
+                    <img src="../static/sad12.jpg">
+                </a>
+            </div>
+        </div>
+    </div>
+    <button id='emo-back' class="btn btn-success btn-lg">LOG OUT</button>
+    <script type="text/javascript">
+        document.getElementById("emo-back").onclick = function () {
+            location.href =  "{{url_for('index') }}"
+        };
+    </script>
+    <hr noshade="2">
+</body>
+</html>

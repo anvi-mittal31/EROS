@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Wallpapers</title>
+    <style>
+        #emo-back{
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 20%;
+          }
+          #emo-back:hover{
+              background-color: red;
+          }
+    </style>
+    <link rel="stylesheet" href="../static/Styles_Wallpapers.css">
+    <script src="https://kit.fontawesome.com/66eb956f0d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Find your moody wallpapers here!<i class="fas fa-laugh-wink"></i></h1>
+    <hr noshade="2">
+    <h2>We are here to your rescue.</h2>
+    <h2>Next we have in line, Surprise Mood Wallpapers: </h2>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <a href="../static/surprise1.jpg" download="surprise1">
+                    <img src="../static/surprise1.jpg">
+                </a>
+                <a href="../static/surprise2.jpg" download="surprise2">
+                    <img src="../static/surprise2.jpg">
+                </a>
+                <a href="../static/surprise3.jpg" download="surprise3">
+                    <img src="../static/surprise3.jpg">
+                </a>
+            </div>
+        </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <a href="../static/surprise4.jpg" download="surprise4">
+                            <img src="../static/surprise4.jpg">
+                        </a>
+                        <a href="../static/surprise5.jpg" download="surprise5">
+                            <img src="../static/surprise5.jpg">
+                        </a>
+                        <a href="../static/surprise6.jpg" download="surprise6">
+                            <img src="../static/surprise6.jpg">
+                        </a>
+                    </div>
+                </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <a href="../static/surprise7.jpg" download="surprise7">
+                    <img src="../static/surprise7.jpg">
+                </a>
+                <a href="../static/surprise8.jpg" download="surprise8">
+                    <img src="../static/surprise8.jpg">
+                </a>
+                <a href="../static/surprise9.jpg" download="surprise9">
+                    <img src="../static/surprise9.jpg">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <a href="../static/surprise10.jpg" download="surprise10">
+                    <img src="../static/surprise10.jpg">
+                </a>
+                <a href="../static/surprise11.jpg" download="surprise11">
+                    <img src="../static/surprise11.jpg">
+                </a>
+                <a href="../static/surprise12.jpg" download="surprise12">
+                    <img src="../static/surprise12.jpg">
+                </a>
+            </div>
+        </div>
+    </div>
+    <button id='emo-back' class="btn btn-success btn-lg">LOG OUT</button>
+    <script type="text/javascript">
+        document.getElementById("emo-back").onclick = function () {
+            location.href =  "{{url_for('index') }}"
+        };
+    </script>
+    <hr noshade="2">
+</body>
+</html>

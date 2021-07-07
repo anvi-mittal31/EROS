@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Wallpapers</title>
+    <style>
+        #emo-back{
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 20%;
+          }
+          #emo-back:hover{
+              background-color: red;
+          }
+    </style>
+    <link rel="stylesheet" href="../static/Styles_Wallpapers.css">
+    <script src="https://kit.fontawesome.com/66eb956f0d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Find your moody wallpapers here!<i class="fas fa-laugh-wink"></i></h1>
+    <hr noshade="2">
+    <h2>We are here to your rescue.</h2>
+    <h2>Next we have in line, Neutral Mood Wallpapers: </h2>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <a href="../static/neutral1.jpg" download="neutral1">
+                    <img src="../static/neutral1.jpg">
+                </a>
+                <a href="../static/neutral2.jpg" download="neutral2">
+                    <img src="../static/neutral2.jpg">
+                </a>
+                <a href="../static/neutral3.jpg" download="neutral3">
+                    <img src="../static/neutral3.jpg">
+                </a>
+            </div>
+        </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <a href="../static/neutral4.jpg" download="neutral4">
+                            <img src="../static/neutral4.jpg">
+                        </a>
+                        <a href="../static/neutral5.jpg" download="neutral5">
+                            <img src="../static/neutral5.jpg">
+                        </a>
+                        <a href="../static/neutral6.jpg" download="neutral6">
+                            <img src="../static/neutral6.jpg">
+                        </a>
+                    </div>
+                </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <a href="../static/neutral7.jpg" download="neutral7">
+                    <img src="../static/neutral7.jpg">
+                </a>
+                <a href="../static/neutral8.jpg" download="neutral8">
+                    <img src="../static/neutral8.jpg">
+                </a>
+                <a href="../static/neutral9.jpg" download="neutral9">
+                    <img src="../static/neutral9.jpg">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <a href="../static/neutral10.jpg" download="neutral10">
+                    <img src="../static/neutral10.jpg">
+                </a>
+                <a href="../static/neutral11.jpg" download="neutral11">
+                    <img src="../static/neutral11.jpg">
+                </a>
+                <a href="../static/neutral12.jpg" download="neutral12">
+                    <img src="../static/neutral12.jpg">
+                </a>
+            </div>
+        </div>
+    </div>
+    <button id='emo-back' class="btn btn-success btn-lg">LOG OUT</button>
+    <script type="text/javascript">
+        document.getElementById("emo-back").onclick = function () {
+            location.href =  "{{url_for('index') }}"
+        };
+    </script>
+    <hr noshade="2">
+</body>
+</html>
